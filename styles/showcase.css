@@ -1,0 +1,68 @@
+:root {
+    font-size: 62.5%;
+    --warna-gelap-1: #082032;
+    --warna-gelap-2: #2C394B;
+    --warna-terang-1: #334756;
+    --warna-terang-2: #EEEEEE;
+    --warna-terang-3: #FF4C29;
+    --warna-teks: #333333;
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.showcase {
+    display: flex;
+    flex-direction: column;
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 1rem 2rem;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.showcase-image {
+    order: -1;
+}
+.showcase-image, .showcase-text {
+    margin: 1rem;
+}
+.showcase-image img {
+    width: 100%;
+    border: 1px solid silver;
+    padding: 1rem;
+    box-shadow: 2px 2px 3px black;
+}
+.showcase-text h2 {
+    font-size: 2.4rem;
+    color: var(--warna-teks);
+}
+.showcase-text p {
+    font-size: 1.6rem;
+    color: var(--warna-teks);
+    padding: 1rem 0;
+}
+
+@media only screen and (min-width: 768px) {
+    .showcase {
+        flex-direction: row;
+        justify-content: space-between;
+        padding: 4rem 3rem;
+    }
+    .showcase:nth-child(even) {
+        background-color: #f0f0f0;
+    }
+    .showcase-image, .showcase-text {
+        width: 50%;
+    }
+    .showcase-image {
+        order: 0;
+    }
+    .showcase-text {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+    }
+    .showcase-text p, .showcase-text h2 {
+        line-height: 1.5;
+    }
+}

@@ -1,0 +1,70 @@
+:root {
+    font-size: 62.5%;
+    --warna-gelap-1: #222831;
+    --warna-gelap-2: #393E46;
+    --warna-terang-1: #FFD369;
+    --warna-terang-2: #EEEEEE;
+}
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+ul, li, a {
+    font-size: 1.6rem;
+}
+header {
+    background-color: var(--warna-gelap-1);
+}
+.header-container {
+    width: 80vw;
+    height: 60px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.logo img {
+    width: 100px;
+    padding-top: 1rem;
+}
+ul {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    display: flex;
+    flex-direction: row;
+    list-style-type: none;
+}
+ul li {
+    position: relative;
+}
+ul li a {
+    display: block;
+    padding: 0 1.5rem;
+    font-size: 1.6rem;
+    text-decoration: none;
+    color: var(--warna-terang-2);
+    line-height: 60px; /*** Jika ingin menggunakan line-height untuk menengahkan teks, pastikan tidak menggunakan
+                        padding top dan bottom ***/
+    height: 60px;
+}
+ul li a.active {
+    border-bottom: 5px solid var(--warna-terang-1);
+    color: var(--warna-terang-1);
+}
+.submenu {
+    flex-direction: column;
+    position: absolute;
+    background-color: var(--warna-gelap-1);
+    display: none;
+}
+nav li:hover>a {
+    background-color: var(--warna-terang-1);
+    color: var(--warna-gelap-2);
+}
+nav li:hover .submenu {
+    display: block;
+    min-width: 200px;
+}
+span {
+    padding-right: 0.5rem;
+}

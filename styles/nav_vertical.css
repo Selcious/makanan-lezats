@@ -1,0 +1,40 @@
+:root {
+    font-size: 62.5%;
+    --warna-background: #f1f1f1;
+    --warna-tulisan: #515151;
+    --warna-background-active: #44b5b5;
+}
+nav {
+    width: 200px;
+}
+ul {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+ul li {
+    background-color: var(--warna-background);
+}
+ul li a {
+    display: block;
+    text-decoration: none;
+    color: var(--warna-tulisan);
+    padding: 0.5rem 1rem;
+    font-size: 2rem;
+    border-left: 3px solid var(--warna-tulisan) ;
+}
+ul li a.active {
+    background-color: var(--warna-background-active);
+    color: white;
+}
+ul li a:hover {
+    background-color: var(--warna-tulisan);
+    color: white;
+    transition-property: all;
+    transition-duration: 500ms;
+    transition-timing-function: ease-in-out;
+}
+span {
+    margin-right: 0.5rem;
+}

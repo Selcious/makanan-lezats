@@ -1,0 +1,48 @@
+:root {
+    font-size: 62.5%;
+}
+* {
+    margin: 0; 
+    padding: 0;
+    box-sizing: border-box;
+}
+ul, li, a {
+    font-size: 1.6rem;
+}
+ul {
+    background-color: rgb(58, 53, 54);
+    list-style-type: none;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    display: flex;
+    flex-direction: row;
+}
+ul li {
+    position: relative;
+}
+ul li a {
+    display: block;
+    text-decoration: none;
+    color: white;
+    padding: 1rem;
+    border-bottom: 10px solid rgb(58, 53, 54);
+}
+ul li a.active {
+    background-color: tomato;
+}
+.submenu {
+    flex-direction: column;
+    position: absolute;
+    display: none;
+}
+nav li:hover>a {
+    background-color: seashell;
+    border-bottom: 5px solid tomato;
+    color: rgb(58, 53, 54);
+}
+nav li:hover ul {
+    display: block;
+    min-width: 150px;
+}
+span {
+    margin-right: 0.5rem;
+}

@@ -1,0 +1,100 @@
+:root {
+    --warna-gelap-1: #222831;
+    --warna-gelap-2: #393E46;
+    --warna-terang-1: #00ADB5;
+    --warna-terang-2: #EEEEEE;
+    --lebar: 1100px;
+}
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+html, body {
+    font-size: 62.5%;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+h3 {
+    font-size: 2rem;
+    margin-bottom: 0.5rem;
+}
+footer {
+    background-color: var(--warna-gelap-1);
+}
+.footer-container {
+    font-size: 1.6rem;
+    max-width: var(--lebar);
+    color: var(--warna-terang-2);
+    margin: 0 auto;
+    padding: 2rem 2rem;
+    text-align: center;
+}
+.footer-menu {
+    display: flex;
+    flex-direction: column;
+}
+.footer-menu section {
+    margin: 0 auto 2rem;
+    width: 98%;
+}
+.logo-container img {
+    max-width: 100px;
+    margin-bottom: 1rem;
+}
+.footer-menu ul {
+    list-style-type: none;
+}
+.footer-menu ul li {
+    padding: 0.5rem;
+}
+.footer-menu ul a {
+    text-decoration: none;
+    color: var(--warna-terang-2);
+}
+.footer-menu ul a:hover {
+    text-decoration: underline solid var(--warna-terang-2);
+}
+section:nth-child(4) div {
+    padding: 0.5rem;
+}
+section:nth-child(4) div i {
+    padding-right: 1rem;
+}
+.footer-social-media {
+    font-size: 2rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+.footer-social-media a {
+    color: var(--warna-terang-2);
+    display: inline-block;
+    padding: 0 0.5rem;
+    margin: 1rem 0;
+}
+.footer-social-media a:hover {
+    color: var(--warna-terang-1);
+}
+@media screen and (min-width: 500px) {
+    .footer-menu {
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+    .footer-menu section {
+        width: 48%;
+    }
+}
+@media screen and (min-width: 900px) {
+    .footer-menu section {
+        width: 25%;
+    }
+    .footer-copyright {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: flex-end;
+    }
+    .footer-social-media a {
+        margin: 0;
+    }
+}

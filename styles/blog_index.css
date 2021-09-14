@@ -1,0 +1,98 @@
+:root {
+    font-size: 62.5%;
+    --warna-gelap-1: #082032;
+    --warna-gelap-2: #2C394B;
+    --warna-terang-1: #334756;
+    --warna-terang-2: #EEEEEE;
+    --warna-terang-3: #FF4C29;
+    --warna-teks: #333333;
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.blog-container {
+    max-width: 1100px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 1.6rem;
+    color: var(--warna-teks);
+    margin: 2rem auto;
+}
+.blog-container header {
+    text-align: center;
+}
+.blog-container header h2 {
+    font-size: 2.4rem;
+    margin-bottom: 1rem;
+}
+.blog-container header hr {
+    width: 25%;
+    margin: 0 auto 1.5rem;
+    border: 0;
+    border-top: 1px solid var(--warna-gelap-2);
+}
+.blog-index {
+    display: flex;
+    flex-direction: column;
+    margin-top: 2rem;
+}
+.blog-index .snippet {
+    width: 98%;
+    padding: 1rem;
+    margin: 0 auto 1.5rem;
+    border: 2px solid #ddd;
+    border-radius: 5px;
+}
+.blog-index .snippet figure {
+    margin: 0 0 1rem;
+    padding: 0;
+    width: 100%;
+    overflow: hidden;
+}
+.blog-index .snippet .snippet-img {
+    width: 100%;
+    transform: rotate(10deg) scale(1.4);
+    transition: 300ms ease-in-out;
+}
+.blog-index .snippet figure:hover img {
+    transform: rotate(0) scale(1.1);
+}
+.blog-index .snippet-txt h3, 
+.blog-index .snippet-txt p:nth-of-type(1) {
+    margin-bottom: 1.5rem;
+}
+.blog-index .snippet-txt h3 {
+    text-align: center;
+}
+.blog-index .snippet-txt p:nth-of-type(1) {
+    min-height: 125px;
+    max-height: 130px;
+}
+.blog-index .snippet-txt small {
+    color: #999;
+}
+@media screen and (min-width: 481px) {
+    .blog-index {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+    .blog-index .snippet {
+        width: 48%;
+    }
+    .snippet .snippet-txt {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+    }
+
+}
+@media screen and (min-width: 786px) {
+    .blog-index {
+        justify-content: space-between;
+    }
+    .blog-index .snippet {
+        width: 30%;
+    }
+}

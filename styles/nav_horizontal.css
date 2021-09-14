@@ -1,0 +1,38 @@
+:root {
+    font-size: 62.5%;
+}
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+nav, ul, li, a {
+    font-size: 1.6rem;
+}
+ul {
+    font-family: 'Times New Roman', Times, serif;
+    list-style-type: none;
+    background-color: #f7eef0;
+    display: flex;
+    flex-direction: reverse;
+    justify-content: flex-end;
+}
+ul li a {
+    display: block;
+    color: #515151;
+    font-size: 2rem;
+    text-decoration: none;
+    padding: 0.5rem 1rem;
+    border-bottom: 2px solid #f7eef0; 
+}
+ul li a.active {
+    background-color: crimson;
+    color: white;
+    border-bottom: 2px solid crimson;
+}
+ul li a:hover {
+    border-bottom: 5px solid crimson;
+}
+span {
+    padding-right: 0.5rem;
+}
